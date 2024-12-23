@@ -19,5 +19,9 @@ Optional [ROUTE] '/me'
 [Response] => Dicoding username.
 */
 
+app.get('/me', (req, res) => {
+    res.send('dicoding_dvidcpo')
+})
+
 app.listen(PORT, HOST)
 console.log(`Running on http://${HOST}:${PORT}`)
